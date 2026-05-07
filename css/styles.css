@@ -37,17 +37,17 @@ body {
     border-radius: 50%;
     background: radial-gradient(
         circle, 
-        rgba(94, 234, 212, 0.8) 0%,   /* Strong color at the center */
-        rgba(94, 234, 212, 0.2) 40%,  /* Wide glow/transparency */
+        rgba(94, 234, 212, 0.25) 0%,   /* Semi-high color center */
+        rgba(94, 234, 212, 0.08) 35%,  /* Wide glow/transparency */
         transparent 70%
     );
     position: fixed;
     pointer-events: none;
     z-index: 1; 
     transform: translate(-50%, -50%);
-    transition: transform 0.1s ease-out;
-    filter: blur(20px); 
-    mix-blend-mode: screen; 
+    transition: transform 0.15s ease-out;
+    filter: blur(12px); 
+    mix-blend-mode: plus-lighter; 
 }
 
 /* Chemical Data Cards */
