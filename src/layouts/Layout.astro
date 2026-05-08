@@ -1,0 +1,52 @@
+---
+import "../styles/styles.css";
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>RDetoX 2.5 — iGEM-RUM 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+    <script is:inline>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bio: {
+                bg: "#050505",
+                card: "#0f1110",
+                neon: "#5EEAD4",
+                green: "#86EFAC",
+                muted: "#A3A3A3",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Space Grotesk", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            letterSpacing: { widest: ".25em" },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-bio-bg text-white antialiased selection:bg-bio-neon selection:text-black relative">
+    <div class="custom-cursor" id="cursor-glow"></div>
+    <slot />
+    <script>
+      import "../scripts/app.js";
+    </script>
+  </body>
+</html>

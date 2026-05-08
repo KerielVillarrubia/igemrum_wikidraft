@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/layout/Header.jsx";
+import Hero from "../components/home/Hero.jsx";
+import ImpactStats from "../components/home/ImpactStats.jsx";
+import Bioremediation from "../components/home/Bioremediation.jsx";
+import Restoration from "../components/home/Restoration.jsx";
+import Contact from "../components/home/Contact.jsx";
+import Footer from "../components/layout/Footer.jsx";
+---
+
+<Layout>
+  <Header />
+  <Hero />
+  <ImpactStats />
+  <Bioremediation />
+  <Restoration />
+  {/* Contact has form state, so it MUST be hydrated on the client */}
+  <Contact client:load />
+  <Footer />
+</Layout>
