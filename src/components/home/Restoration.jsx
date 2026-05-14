@@ -18,7 +18,7 @@ const METRICS = [
     label: "Biodiversity Index",
     before: "0.12",
     after: "→ 0.87",
-    afterColor: "text-bio-green",
+    afterColor: "text-bio-orange",
     beforeStyle: "",
     note: "Shannon Index",
   },

@@ -55,7 +55,7 @@ export default function ImpactStats() {
               key={compound.name}
               className="chem-box bg-bio-card p-6 flex flex-col items-center justify-center text-center"
             >
-              <span className="text-2xl font-bold font-display text-bio-green mb-2">
+              <span className="text-2xl font-bold font-display text-bio-orange mb-2">
                 {compound.name}
               </span>
               <span className="text-xs font-mono text-bio-muted mb-1">

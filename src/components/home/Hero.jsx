@@ -4,9 +4,11 @@ export default function Hero() {
       <section className="h-screen flex flex-col items-center justify-start pt-48 text-center px-4 relative">
         <div className="max-w-7xl reveal active">
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold leading-none tracking-tighter mb-6 uppercase">
-            RDetox 2.5:
+            <span className="text-bio-red">RD</span>
+            <span className="text-[0.8em]">eto</span>
+            <span className="text-bio-red">x</span> 2.5:
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 from-10% via-white via-30% to-bio-neon to-80%">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-400 from-10% via-white via-30% to-bio-neon to-80%">
               Invisible Enemies
             </span>
           </h1>
