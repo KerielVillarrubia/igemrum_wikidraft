@@ -15,12 +15,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+    build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: withastro/action@v3
-        # uses Node 20 by default; builds & uploads dist/ as an artifact
+        with:
+          node-version: 22
 
   deploy:
     needs: build
